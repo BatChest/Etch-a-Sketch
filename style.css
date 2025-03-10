@@ -7,6 +7,7 @@
 }
 
 .grid-child {
+  background-color: white;
   width: calc(100% / 16);
   /* Maintains square shape */
   aspect-ratio: 1/1;

@@ -8,7 +8,16 @@ for (let i = 0; i < 16; i++) {
   for (let j = 0; j < 16; j++) {
     const newDiv = document.createElement('div');
     newDiv.classList.add('grid-child');
+
+    // Add new listener to each new div
+    // Makes the cursor as a pen to draw
+    newDiv.addEventListener('mouseover', function (e) {
+      e.target.style.backgroundColor = 'green';
+    });
+
     container.appendChild(newDiv);
   }
 }
+
+
 
