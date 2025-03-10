@@ -3,15 +3,55 @@
   flex-wrap: wrap;
   width: 100%;
   max-width: 900px;
-  margin: 50px auto;
+  margin: 20px auto;
 }
 
 .grid-child {
   background-color: white;
-  width: calc(100% / 16);
   /* Maintains square shape */
   aspect-ratio: 1/1;
   border: 1px solid black;
   /* Ensures border width is included in the element's dimensions */
   box-sizing: border-box;
+}
+
+.topRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sizingButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#resize {
+  border-radius: 15px;
+  border: 3px;
+  padding: 10px 20px;
+  background-color: lightcyan;
+  font-weight: bolder;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.resetButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#reset {
+  border-radius: 15px;
+  border: 3px;
+  padding: 10px 20px;
+  background-color: lightcyan;
+  font-weight: bolder;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
 }
