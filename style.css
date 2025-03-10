@@ -1,7 +1,16 @@
 #container {
-  background: blue;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 900px;
+  margin: 50px auto;
 }
 
 .grid-child {
-  display: flex;
+  width: calc(100% / 16);
+  /* Maintains square shape */
+  aspect-ratio: 1/1;
+  border: 1px solid black;
+  /* Ensures border width is included in the element's dimensions */
+  box-sizing: border-box;
 }
