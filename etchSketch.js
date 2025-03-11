@@ -21,7 +21,7 @@ function createGrid(gridSize) {
       newDiv.setAttribute('style', gridStyle);
 
       newDiv.addEventListener('mouseover', function (e) {
-        e.target.style.backgroundColor = 'green';
+        e.target.style.backgroundColor = 'black';
       });
 
       container.appendChild(newDiv);
@@ -50,8 +50,8 @@ function resizeCanvas() {
 
 // Fix Reset button later
 function resetGrid() {
-  const highlightedItems = userList.querySelectorAll('div');
-  highlightedItems.forEach((userItem) => {
-    userItem.style.backgroundColor = 'white';
+  const highlightedItems = container.querySelectorAll(".grid-child");
+  highlightedItems.forEach((item) => {
+    item.style.backgroundColor = 'white';
   });
 }
